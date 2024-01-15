@@ -1,0 +1,36 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="w3.css">
+
+<body>
+	<div class="w3-container w3-grey">
+		<h2>Membuat Menu Tab dan Link</h2>
+	</div>
+
+	<div class="w3-bar w3-purple w3-card-4">
+		<button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>
+		<button class="w3-bar-item w3-button" onclick="openKota('Cimahi')">Cimahi</button>
+	</div>
+	<div id="Bandung" class="w3-container kota w3-animate-top kota" style="display:none">
+		<h2>Bandung</h2>
+		<p>Bandung Adalah Ibu Kota Jawa Barat</p>
+		<img src="gedung.jpg" style="width : 50%">
+	</div>
+		<div id="Cimahi" class="w3-container kota w3-animate-bottom kota" style="display:none">
+			<h2>Cimahi</h2>
+			<p>Cimahi Adalah Kota Terkaya di Indonesia</p>
+			<img src="mobil.jpg" style="width : 50%">
+		</div>
+			<script>
+				function openKota(namaKota)
+				{
+					var i;
+					var x = document.getElementsByClassName("kota");
+					for (i = 0; i < x.length; i++){
+					x[i].style.display="none";
+					}
+					document.getElementById(namaKota).style.display="block"
+				}
+			</script>
+</body>
+</html>

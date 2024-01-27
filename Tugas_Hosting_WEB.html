@@ -1,0 +1,79 @@
+<html> 
+  <head class="w3-responsive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="icon" href="Annie.jpg">
+        <title>Welcome To My Kingdom</title> 
+  <body>
+    
+    <div class="background-header">
+      <a href="https://www.unikom.ac.id/" class="logo">
+    <span class="logo-lg">
+      <img src="logo_unikom_kuning.png" width="100px" height="100px"></span></a>
+          <h1>Tugas Hosting Pemograman WEB</h1>
+
+    <div class="w3-bar w3-responsive animation">
+      <button class="w3-bar-item w3-button" onclick="openFoto('Profile')">Profile</button> 
+      <button class="w3-bar-item w3-button" onclick="openFoto('Universitas')">Universitas</button> 
+      <button class="w3-bar-item w3-button" onclick="openFoto('Kota')">Kota</button>
+      <button class="w3-bar-item w3-button" onclick="openFoto('Annie')">Annie</button>
+	  <button class="w3-bar-item w3-button" onclick="openFoto('Noctis')">Noctis</button>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">All</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+     <button class="w3-bar-item w3-button" onclick="openFoto('Profile')">Profile</button> 
+      <button class="w3-bar-item w3-button" onclick="openFoto('Universitas')">Universitas</button> 
+      <button class="w3-bar-item w3-button" onclick="openFoto('Kota')">Kota</button>
+      <button class="w3-bar-item w3-button" onclick="openFoto('Annie')">Annie</button>
+	   <button class="w3-bar-item w3-button" onclick="openFoto('Noctis')">Noctis</button>
+    </div>
+  </div>
+</div>
+</div>
+<center>
+    <div id="Profile" class="w3-container foto w3-animate-fading"  style="display:none"> 
+      <h1>Saya</h1> 
+      <img src="icad.jpg" alt="Anime" height="500" width="500">
+	  <p>Nama Saya Risyad Damar Zaki, saya lahir di Cimahi tepatnya pada tangg 26 Februari 2007. Saya sekarang sedang berkuliah di Universitas Komputer Indonesia yang bertempatan di Jl.Dipatiukur Bandung
+	  Saya memilih opsi masuk ke progra studi Teknik Informatika yang sebelumnya saya belum pernah mengetahui materi materi dasar dari program studi ini. Dengan adanya rasa ingin belajar, membuat saya
+	  tetap memilih progra studi ini. Sekian Terima Kasih.</p>
+	  <h1><a href="frame1.html">Lebih Lanjut!</a></h1>
+    </div> 
+    <div id="Universitas" class="w3-container foto w3-animate-bottom" style="display:none"> 
+      <h1>Universitas</h1> 
+      <img src="unikom.jpg" alt="Kpop"height="500" width="500">
+	  <p>Universitas Komputer Indonesia, adalah Universitas yang sedang saya jalani. Universitas Komputer Indonesia atau yang biasa disebut dengan UNIKOM.
+	  Memiliki akreditasi Unggul dalam Fakultas Teknik dan Ilmu Komputer yang dimana kualitas beserta kuantitas sangan bagus didalamnya</p>
+	  <h1><a href="https://www.unikom.ac.id/">Lebih Lanjut!</h1></a>
+    </div> 
+    <div id="Kota" class="w3-container foto w3-animate-top" style="display:none"> 
+      <h1>Kota Cimahi </h1> 
+      <img src="cimahi.jpg" alt="Anime2" height="500" width="500 ">
+	  <p>Kota Cimahi menjadi kota yang banyak kenangannya. Mulai dari hal menyenangkan hingga hal  yang menyendihkan pun selalu ada di kota ini.
+	  dengan berbagai wisatanya yang indah, ramai, hingga wisatawan turis pun tidak sedikit yang mengunjungi Cimahi.</p>
+    </div> 
+    <div id="Annie" class="w3-container foto w3-animate-zoom" style="display:none"> 
+      <h1>Annie Leonhart</h1> 
+      <img src="Annie.jpg" alt="Kpop2"width="50%">
+	  <p>Annie Leonhart adalah sosok karakter fiksi dari serial anime Attack On Titan jepang. Saya mencantumkan Annie karena karakter favorit saya xixixi</p>
+	</div>
+	<div id="Noctis" class="w3-container foto w3-animate-zoom" style="display:none"> 
+      <h1>Noctis Final Fantasy XV</h1> 
+      <img src="real_noctis.jpg" alt="Noctis"width="50%">
+	  <p>Seperti dalam judul, Noctis adalah Main Character dari serial game Final Fantasy XV. Karakter Protagonis yang membalaskan dendam kepada musuh atas kematian ayahnya.</p>
+    </div>
+    <script> 
+
+      function openFoto(namafoto) { 
+        var i; 
+        var x = document.getElementsByClassName("foto"); 
+        for (i = 0; i < x.length; i++) { 
+          x[i].style.display = "none";   
+        } 
+        document.getElementById(namafoto).style.display = "block";   
+      } 
+    </script>
+  </body> 
+</html>
